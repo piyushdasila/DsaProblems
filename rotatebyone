@@ -1,0 +1,37 @@
+public class rotatebyone {
+    public static void rotateClockwise(int[] A,int N){
+         int[] tempArray=new int[A.length];
+        for (int i =0;i<A.length-1;i++) {
+
+            if(i<=A.length-1)
+            tempArray[i + 1] = A[i];
+        }
+
+
+
+            tempArray[0]=A[A.length-1];
+
+
+
+        for (int i=0;i<tempArray.length;i++)
+        System.out.println(tempArray[i]);
+
+
+
+
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        int[] A = {2, 4, 5, 15, 65, 55};
+        int N = A.length;
+
+
+        rotatebyone rot = new rotatebyone();
+        rot.rotateClockwise(A, N);
+
+    }
+}
+
+
+
